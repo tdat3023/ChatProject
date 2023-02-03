@@ -1,0 +1,133 @@
+.card_chat_active{
+  background-color: var(--B10);
+}
+.card_chat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 14px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+    &:hover{
+        background-color: rgba(0,0,0,0.02);
+        .cancel_icon{
+            display: block;
+        }
+        .group_right{
+
+            .numberNotification{
+                opacity: 0;
+               display: none;
+            }
+            .threeDot{
+                opacity: 1;
+                z-index: 10;
+            }
+        }
+    }
+    .css-1ytufz-MuiAvatarGroup-root .MuiAvatar-root {
+        margin-left: 0px !important;
+    }
+    .card_group{
+        display: flex;
+        align-items: center;
+        .group_avatar{
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+           
+            .css-1ytufz-MuiAvatarGroup-root .MuiAvatar-root {
+                width: 22px !important;
+                height: 22px !important;
+                font-size: 12px;
+              
+            }
+           
+            .css-1ytufz-MuiAvatarGroup-root {
+                display: flex !important;
+                flex-direction: column-reverse !important;
+            }
+            .avatar_item{
+                width: 22px;
+                height: 22px;
+            }
+        }
+        .avt{
+            width: 50px;
+            height: 50px;
+            border: 1px solid white;
+        }
+        .group_text{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+    .card_name{
+        margin-left: 8px;
+        h6{
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(0,0,0,0.7);
+        }
+        p{
+            font-size: 14px;
+            color: rgba(0,0,0,0.5);
+        }
+        .active_name{
+            font-weight: 700;
+            color: rgba(0,0,0,0.8);
+        }
+        .active{
+            color: rgba(0,0,0,6);
+            font-weight: 500;
+        }
+    }
+
+    .group_right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 100%;
+        position: relative;
+        .card_time{
+            font-size: 12px;
+            color: rgba(0,0,0,0.5);
+         
+        }
+        .numberNotification{
+            background-color: #FF4A4A;
+            width: 16px;
+            height: 16px;
+            display: flex;
+            font-size: 10px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: white;
+            transition: all 0.4s;
+            padding: 2px;
+            position: absolute;
+            bottom: 0;
+        }
+        .threeDot{
+            color: rgba(0,0,0,0.5);
+            opacity: 0;
+            transition: all 0.4s;
+          
+          
+            &:hover{
+                color: rgba(60, 20, 241, 0.8);
+            }
+
+        }
+    }
+
+    .cancel_icon{
+        display: none;
+    }
+}

@@ -1,0 +1,136 @@
+
+.edit_name{
+    padding: 0 1.25rem;
+    margin-top: 3rem;
+    p{
+
+    }
+    input{
+        width: 100% !important;
+        padding: 8px !important;
+       
+    }
+    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+        width: 100% !important;
+        margin: 4px 0;
+    }
+    .title{
+        font-size: 12px;
+        color: rgba(0,0,0,0.6);
+    }
+}
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: var(--grey-300);
+    margin: 1rem 0;
+}
+.bg{
+    background-image: url('../../images/bg.jpg');
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    .bg-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top:100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .avatar{
+            width: 80px !important;
+            height: 80px !important;
+            border: 2px solid white !important;
+            cursor: pointer;
+        }
+        span{
+            width: 24px;
+            height: 24px;
+            border: 1px solid var(--grey-300);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           color: var(--neutral-600);
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            background: white;
+            bottom: 0;
+        }
+        p{
+           // padding-top: 1rem;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+
+}
+.group_btn{
+    padding:  1.25rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.info-personupdate{
+    margin-top: 1rem;
+}
+.info-person{
+    height: 45vh;
+    margin-top: 4rem;
+}
+.option_details{
+   
+    .option_one{
+        font-size: 14px;
+        display: flex;
+        padding: 8px 0;
+        align-items: center;
+        cursor: pointer;
+        padding: 0.5rem 1.25rem;
+        &:hover{
+            background-color: var(--STB20);
+        }
+        span{
+            margin-right: 6px;
+        }
+    }
+}
+.info-personupdate{
+    padding: 0 1.25rem;
+}
+.info-person, .info-personupdate{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    width: 100%;
+
+    h5{
+        color: rgba(0,0,0,0.8);
+        font-size: 14px;
+    }
+    p{
+       
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        span:first-child{
+            
+                color: rgba(0,0,0,0.6);
+            
+        }
+    }
+    
+}
+
+.group_btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}

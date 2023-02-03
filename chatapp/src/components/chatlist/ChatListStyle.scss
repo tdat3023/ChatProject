@@ -1,0 +1,54 @@
+
+.chatlist{
+    height: 100vh;
+    // width: 440px;
+    border-right: 1px solid var(--grey-500);
+    padding: 14px 0;
+    display: flex;
+    flex-direction: column;
+    .listChatCard::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      .listChatCard::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        border-radius: 100px;
+      }
+      
+      .listChatCard::-webkit-scrollbar-thumb {
+        background-color: var(--N60);
+        height: 20px;
+        border-radius: 100px;
+      }
+    .listChatCard{
+
+      height: 84vh;
+      overflow: hidden;
+        overflow-y: auto;
+        position: relative;
+        .box_empty{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: rgba(0,0,0,0.2);
+            span{
+                font-size: 60px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+    font-size: 12px !important;
+    font-weight: 600 !important;
+  
+}

@@ -1,0 +1,22 @@
+.notify-mess{
+    background-color: #FFF6EA;
+    padding: 6px 18px;
+    border-radius: 14px;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    box-shadow: 0 0 4px rgba(0,0,0,0.01);
+    margin-top: 1rem;
+    
+    .notify-content{
+        span{
+            color: rgba(0,0,0,0.8);
+            font-weight: 500;
+        }
+    }
+}
+.notify-block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

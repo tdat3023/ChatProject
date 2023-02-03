@@ -1,0 +1,72 @@
+.list_friend::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .list_friend::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100px;
+  }
+  
+  .list_friend::-webkit-scrollbar-thumb {
+    
+    height: 20px;
+    border-radius: 100px;
+  
+  }
+.list_friend{
+    padding-top: 1rem;
+    overflow-y: auto;
+    &:hover{
+        &::-webkit-scrollbar-thumb{
+            background-color: var(--N60);
+        }
+    }
+    
+    .group_friend{
+       
+    }
+    .block{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        &:hover{
+            background-color: var(--B10);
+        }
+        img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+        p{
+            text-transform: capitalize;
+            font-size: 16px;
+            margin-left: 0.5rem;
+        }
+    }
+
+    .f_card{
+        display: flex;
+        align-items: center;
+        padding: 0.8rem 1rem ;
+        cursor: pointer;
+        &:hover{
+            background-color: var(--N40);
+        }
+        // img{
+        //     width: 50px;
+        //     height: 50px;
+        //     object-fit: cover;
+        //     margin-right: 0.5rem;
+        //     border-radius: 50%;
+
+        // }
+        p{
+            text-transform: capitalize;
+            margin-left: 0.5rem;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(0,0,0,0.8);
+        }
+    }
+}

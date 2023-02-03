@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "223864100929",
+    "firebase_url": "https://chatapp-react-17ab5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chatapp-react-17ab5",
+    "storage_bucket": "chatapp-react-17ab5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223864100929:android:e16babc971799fa7014ec0",
+        "android_client_info": {
+          "package_name": "com.awesomeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223864100929-fdgb5q9k4t006072lqab9itdskjfpuo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkSiV0J0K-Glx6R6MxS-IJkEkDrmLfYHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223864100929-fdgb5q9k4t006072lqab9itdskjfpuo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

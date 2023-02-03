@@ -1,0 +1,110 @@
+.chat_feed{
+    .meassage_loadingStatus, .messageLoadingOldMessage{
+
+        position: absolute;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .circle_loading{
+           // font-size: 18px;
+        }
+        p{
+            margin-top: 16px;
+            font-size: 12px;
+            color: rgba(0,0,0,0.5);
+        }
+    }
+    .meassage_loadingStatus{
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5rem;
+
+    }
+    .messageLoadingOldMessage{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20rem;
+    }
+    
+    height: 100vh;
+   // background: hsla(0,2%,90%,.43);
+   background-color: #F5EFE6;
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    //  justify-content: space-between;
+  
+    .goToBottom{
+        width:35px;
+        height:35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        position: absolute;
+        bottom: 80px;
+        right: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 11;
+        &:hover{
+            color:var(--shades-left-bar)
+        }
+    }
+    .message_content::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      .message_content::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        border-radius: 100px;
+      }
+      
+      .message_content::-webkit-scrollbar-thumb {
+        background-color: var(--N60);
+        height: 20px;
+        border-radius: 100px;
+      }
+    .message_content{
+        
+        .card_title{
+            display: inline-block;
+            border-radius: 8px;
+            background-color: #fff;
+            transform: translateX(-50%);
+            position: relative;
+            left: 50%;
+            .title_top{
+                padding: 1rem;
+                display: flex;
+                height: 5rem;
+                justify-content: space-between;
+                align-items: flex-start;
+                .topContent{
+                    margin-left: 1rem;
+                }
+            }
+            .title_image{
+                height: 10rem;
+                width: 100%;
+                background-image: url(../../images/bg.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+        padding: 6rem 0;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: auto;
+       
+    }
+//     background-image: url(../../images/av.jpg);
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+ }
+//background: hsla(0,2%,90%,.43);

@@ -1,0 +1,16 @@
+
+.users_member{
+    padding: 12px 0;
+    &:hover{
+        background-color: rgba(0,0,0,0.02);
+        .threeDots{
+            opacity: 1;
+        }
+    }
+    .threeDots{
+        opacity: 0;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

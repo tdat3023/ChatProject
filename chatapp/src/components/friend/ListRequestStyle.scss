@@ -1,0 +1,86 @@
+.list_request{
+   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-grow: 1;
+    .list_top{
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 99;
+        p{
+            font-weight: 500;
+            font-size: 20px;
+            margin-left: 1rem;
+        }
+    }
+    .list_content::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      .list_content::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        border-radius: 100px;
+      }
+      
+      .list_content::-webkit-scrollbar-thumb {
+        background-color: var(--N60);
+        height: 20px;
+        border-radius: 100px;
+      }
+    .list_content{
+        overflow: hidden;
+        overflow-y: auto;
+        background: var(--N10);
+        flex-grow: 1;
+        padding: 1rem 5rem;
+        padding-top: 6rem;
+       
+       
+        .content_title{
+            font-weight: 500;
+
+        }
+
+        .card{
+            display: flex;
+            background-color: #fff;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(0,0,0,0.1);
+            padding: 1.2rem 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            .card_left{
+                display: flex;
+                align-items: flex-start;
+            }
+            img{
+                width: 65px;
+                height: 65px;
+                object-fit: cover;
+                margin-right: 0.6rem;
+                border-radius: 50%;
+            }
+            p{
+                text-transform: capitalize;
+            }
+            .card_text{
+                color: rgba(0,0,0,0.6);
+                .rep{
+                    color: var(--B40);
+                }
+
+            }
+        }
+    }
+}

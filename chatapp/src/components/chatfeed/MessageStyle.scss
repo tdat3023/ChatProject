@@ -1,0 +1,251 @@
+@import '../../styles/grid';
+
+.message_text{
+ position: relative;
+ padding: 12px;
+ border-radius: 8px;
+ background-color: #fff;
+ display: inline-block;
+ z-index: 1;
+
+
+}
+.message{
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+    //flex-direction: row-reverse;
+    align-items: flex-start;
+   
+    margin: 6px 0;
+    
+    // width: 60%;
+    // overflow-wrap: break-word;
+    
+    
+
+    .messImg{
+        width: 14rem;
+        height: 26rem;
+        border-radius: 6px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+    }
+    .bg-trans{
+        background-color: transparent !important;
+    }
+    .messSticker{
+        width: 85px;
+        height: 85px;
+        margin-bottom: 0.5rem;
+        position: relative;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+       .timeMessSticker{
+        font-size: 12px;
+        color: rgba(0,0,0,0.6);
+       }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+   &:hover{
+    z-index: 2;
+    .icon_react{
+        opacity: 1;
+    }
+    .option{
+        opacity: 1;
+
+    }
+   }
+
+   .reactionIcons{
+    display: flex;
+   
+    align-items: center;
+    margin-top: 8px;
+    position: relative;
+    z-index: 2;
+    .arr_icons{
+        width: auto;
+        border-radius: 12px;
+        border: 1px solid rgba(0,0,0,0.09);
+        padding: 4px 8px;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 4px;
+
+        span{
+            font-size: 12px;
+        }
+    }
+    .nowIcon{
+        border-radius: 50%;
+        border: 1px solid rgba(0,0,0,0.09);
+        background-color: white;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .icon_face{
+        width: 16px;
+        height: 16px;
+        object-fit: cover;
+        margin-right: 2px;
+        cursor: pointer;
+        transition: all 0.1s;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+      
+    }
+   }
+   .icon_list{
+        /* background-color: red; */
+        height: 100%;
+        width: 60%;
+        /* width: 100%; */
+        /* height: 40px; */
+       // width: 20px;
+        position: absolute;
+        top: 0;
+       
+        left: 0;
+   }
+   .icon_list, .reactionIcons{
+    
+    .icons_react{
+        background-color: #fff;
+        box-shadow: 0 0 10px -2px rgba(0,0,0,0.2);
+      
+        padding: 6px 12px;
+        border-radius: 16px;
+        position: absolute;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+       
+        transform: translateY(-50%);
+       // height: 50px;
+       //opacity: 0;
+        .icon_face{
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            margin: 0 6px;
+            cursor: pointer;
+            transition: all 0.1s;
+           
+           
+            &:hover{
+                transform: scale(1.2);
+                
+            }
+        }
+
+    }
+   }
+   .icon_react:hover .icons_react{
+    opacity: 1;
+   }
+ 
+    .icon_react{
+        padding: 6px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+       // bottom: -50%;
+       bottom:-24px;
+        transform: translateY(-50%);
+       
+        // right: 20px;
+        border: 1px solid rgba(0,0,0,0.1);
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.2s;
+        opacity: 0;
+       
+    }
+    .avatar{
+        margin:0 0.5rem 0 1rem  !important;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    .message_text{
+        position: relative;
+        padding: 12px;
+        border-radius: 8px;
+        background-color: #fff;
+        display: inline-block;
+        z-index: 1;
+        box-shadow: 0 0 10px rgba(0,0,0,0.01);
+       
+    }
+    .message_text__overFlow{
+        width: 50%;
+        overflow-wrap: anywhere;
+    }
+    .cssFileDocx{
+        background-color: var(--B10);
+    }
+   .textMess{
+    margin-bottom: 6px;
+   }
+   .timeMess{
+    font-size: 12px;
+    color: rgba(0,0,0,0.6);
+   }
+
+   .option{
+    background-color: var(--WA50);
+    border-radius: 6px;
+    padding: 1px 8px;
+    margin: 0 1rem;
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: all 0.2s;
+
+    span{
+        cursor: pointer;
+        font-size: 20px;
+        padding: 0 2px;
+        color: var(--N80);
+        
+        &:hover{
+            color:blue;
+        }
+    }
+   }
+}
+
+.nameChatting{
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 6px;
+    font-size: 14px;
+}

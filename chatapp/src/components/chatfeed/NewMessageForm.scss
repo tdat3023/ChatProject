@@ -1,0 +1,60 @@
+.booderTop{
+
+    border-top: 1px solid var(--button-color) !important;
+}
+.new_message{
+    background-color: white;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .choise{
+            background-color: var(--B10) !important;
+            color: var(--B50) !important;
+        }
+        input{
+            background-color: transparent;
+            flex-grow: 1;
+            font-size: 1rem;
+        }
+        span{
+            font-size: 24px;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            &:hover{
+                background-color: var(--grey-500);
+            }
+        }
+    }
+   .jjXFrm {
+        position: absolute !important;
+        right: 5%!important;
+        bottom: 150% !important;
+        z-index: 99 !important;
+   }
+   .searchIcons {
+        position: absolute !important;
+        right: 5%!important;
+        bottom: 150% !important;
+        z-index: 99 !important;
+   }
+}
+
+.reply_block{
+    border-radius: 6px;
+    padding: 12px;
+    background-color:var(--neutral-700),
+    
+}
